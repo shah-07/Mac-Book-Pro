@@ -29,15 +29,21 @@
                 <!-- configuration Section -->
                 <section>
                     <h4 class="font-bold mt-6">Memory</h4>
-                    <button id="8gb-memory-btn" class="text-xs border border-black rounded p-1 hover:bg-gray-800 hover:text-white transition duration-300">8GB unified memory</button>
-                    <button id="16gb-memory-btn" class="text-xs border border-black rounded p-1 hover:bg-gray-800 hover:text-white transition duration-300">16GB unified memory</button>
+                    <div id="memory-config">
+                        <button id="8gb-memory-btn" class="memory-btn">8GB unified memory</button>
+                        <button id="16gb-memory-btn" class="memory-btn">16GB unified memory</button>
+                    </div>
                     <h4 class="font-bold mt-6">Storage</h4>
-                    <button id="256gb-ssd-btn" class="text-xs border border-black rounded p-1 hover:bg-gray-800 hover:text-white transition duration-300">256GB SSD storage</button>
-                    <button id="512gb-ssd-btn" class="text-xs border border-black rounded p-1 hover:bg-gray-800 hover:text-white transition duration-300">512GB SSD storage</button>
-                    <button id="1tb-ssd-btn" class="text-xs border border-black rounded p-1 hover:bg-gray-800 hover:text-white transition duration-300">1TB SSD storage</button>
+                    <div class="storage-config">
+                        <button id="256gb-ssd-btn" class="storage-btn">256GB SSD storage</button>
+                        <button id="512gb-ssd-btn" class="storage-btn">512GB SSD storage</button>
+                        <button id="1tb-ssd-btn" class="storage-btn">1TB SSD storage</button>
+                    </div>
                     <h4 class="font-bold mt-6">Choose your delivery option</h4>
-                    <button id="free-delivery-btn" class="text-xs border border-black rounded p-1 hover:bg-gray-800 hover:text-white transition duration-300">Friday, Aug 25 FREE Prime Delivery</button>
-                    <button id="paid-delivery-btn" class="text-xs border border-black rounded p-1 hover:bg-gray-800 hover:text-white transition duration-300">Friday, Aug 21 Delivery charge $20</button>
+                    <div class="delivery-config">
+                        <button id="free-delivery-btn" class="delivery-btn">Friday, Aug 25 FREE Prime Delivery</button>
+                        <button id="pay-delivery-btn" class="delivery-btn">Friday, Aug 21 Delivery charge $20</button>
+                    </div>
 
                     <!-- Extra configuration price Section -->
                     <div class="grid grid-cols-2 gap-x-2 mt-8 w-2/3 font-bold">
