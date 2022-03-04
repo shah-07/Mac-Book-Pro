@@ -16,9 +16,9 @@
 
 <body>
     <main class="container mx-auto w-5/6">
-        <div class="grid grid-cols-2 gap-x-8 my-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 my-8">
             <!-- Image Area -->
-            <section><img src="images/mac.png" class="mx-auto w-2/3" alt="mac book"></section>
+            <section class="mb-8"><img src="images/mac.png" class="mx-auto w-2/3" alt="mac book"></section>
             <!-- content Area -->
             <section>
                 <!-- heading part -->
@@ -29,38 +29,44 @@
                 <!-- configuration Section -->
                 <section>
                     <h4 class="font-bold mt-6">Memory</h4>
-                    <button id="8gb-memory-btn" class="text-xs border border-black rounded p-1 hover:bg-gray-800 hover:text-white transition duration-300">8GB unified memory</button>
-                    <button id="16gb-memory-btn" class="text-xs border border-black rounded p-1 hover:bg-gray-800 hover:text-white transition duration-300">16GB unified memory</button>
+                    <div id="memory-config">
+                        <button id="8gb-memory-btn" class="memory-btn">8GB unified memory</button>
+                        <button id="16gb-memory-btn" class="memory-btn">16GB unified memory</button>
+                    </div>
                     <h4 class="font-bold mt-6">Storage</h4>
-                    <button id="256gb-ssd-btn" class="text-xs border border-black rounded p-1 hover:bg-gray-800 hover:text-white transition duration-300">256GB SSD storage</button>
-                    <button id="512gb-ssd-btn" class="text-xs border border-black rounded p-1 hover:bg-gray-800 hover:text-white transition duration-300">512GB SSD storage</button>
-                    <button id="1tb-ssd-btn" class="text-xs border border-black rounded p-1 hover:bg-gray-800 hover:text-white transition duration-300">1TB SSD storage</button>
+                    <div class="storage-config">
+                        <button id="256gb-ssd-btn" class="storage-btn">256GB SSD storage</button>
+                        <button id="512gb-ssd-btn" class="storage-btn">512GB SSD storage</button>
+                        <button id="1tb-ssd-btn" class="storage-btn">1TB SSD storage</button>
+                    </div>
                     <h4 class="font-bold mt-6">Choose your delivery option</h4>
-                    <button id="free-delivery-btn" class="text-xs border border-black rounded p-1 hover:bg-gray-800 hover:text-white transition duration-300">Friday, Aug 25 FREE Prime Delivery</button>
-                    <button id="paid-delivery-btn" class="text-xs border border-black rounded p-1 hover:bg-gray-800 hover:text-white transition duration-300">Friday, Aug 21 Delivery charge $20</button>
+                    <div class="delivery-config">
+                        <button id="free-delivery-btn" class="delivery-btn">Friday, Aug 25 FREE Prime Delivery</button>
+                        <button id="pay-delivery-btn" class="delivery-btn">Friday, Aug 21 Delivery charge $20</button>
+                    </div>
 
                     <!-- Extra configuration price Section -->
-                    <div class="grid grid-cols-2 gap-x-2 mt-8 w-2/3 font-bold">
+                    <div class="grid grid-cols-2 gap-x-2 mt-8 w-auto md:w-11/12 font-bold">
                         <h4>Base Price</h4>
                         <h4>$<span id="base-price">1299</span></h4>
                     </div>
                     <hr class="w-72">
-                    <div class="grid grid-cols-2 gap-x-2 w-2/3 font-bold">
+                    <div class="grid grid-cols-2 gap-x-2 w-auto md:w-11/12 font-bold">
                         <h4>Extra Memory Cost</h4>
                         <h4>$<span id="memory-cost">0</span></h4>
                     </div>
                     <hr class="w-72">
-                    <div class="grid grid-cols-2 gap-x-2 w-2/3 font-bold">
+                    <div class="grid grid-cols-2 gap-x-2 w-auto md:w-11/12 font-bold">
                         <h4>Extra Storage Cost</h4>
                         <h4>$<span id="storage-cost">0</span></h4>
                     </div>
                     <hr class="w-72">
-                    <div class="grid grid-cols-2 gap-x-2 w-2/3 font-bold">
+                    <div class="grid grid-cols-2 gap-x-2 w-auto md:w-11/12 font-bold">
                         <h4>Delivery charge</h4>
                         <h4>$<span id="delivery-cost">0</span></h4>
                     </div>
                     <hr class="w-72 border-t-2 border-gray-800">
-                    <div class="grid grid-cols-2 gap-x-2 w-2/3 font-bold">
+                    <div class="grid grid-cols-2 gap-x-2 w-auto md:w-11/12 font-bold">
                         <h4>Total Price</h4>
                         <h4>$<span id="total-price">1299</span></h4>
                     </div>
@@ -68,7 +74,7 @@
 
                     <!-- Pomo Code Area -->
                     <h4 class="mt-8 mb-1">Add pomo code (stevekaku)</h4>
-                    <div class="grid grid-cols-2 gap-x-2 w-2/3 font-bold">
+                    <div class="grid grid-cols-2 gap-x-2 w-auto md:w-11/12 font-bold">
                         <input id="pomo-input" type="text" class="px-4 border-2 rounded-lg z-0 focus:shadow focus:outline-none">
                         <button id="pomo-code-btn" class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600">Apply</button>
                     </div>
